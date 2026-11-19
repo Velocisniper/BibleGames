@@ -5,10 +5,9 @@
   --card: #242424;
   --line: #222222;
 
-  /* one jewel tone per game, like panes in a church window */
-  --ruby: #c9913e;
-  --sapphire: #395d8b;
-  --bronze: #9948a0;
+  --gold: #c9913e;
+  --blue: #395d8b;
+  --purple: #9948a0;
 
   --heading: "Young Serif", Georgia, "Times New Roman", serif;
   --body: "Figtree", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -60,7 +59,7 @@ body {
 }
 
 .game {
-  --accent: var(--ruby);
+  --accent: var(--gold);
   display: grid;
   grid-template-columns: 104px 1fr;
   grid-template-areas:
@@ -77,8 +76,8 @@ body {
   border-radius: 8px;
 }
 
-.game:nth-child(2) { --accent: var(--sapphire); }
-.game:nth-child(3) { --accent: var(--bronze); }
+.game:nth-child(2) { --accent: var(--blue); }
+.game:nth-child(3) { --accent: var(--purple); }
 
 .game--connections { --image-scale: 1.3; }
 .game--mapper { --image-scale: .95; }
